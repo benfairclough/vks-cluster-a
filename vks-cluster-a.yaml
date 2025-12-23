@@ -3,9 +3,9 @@ kind: Cluster
 #define the cluster
 metadata:
   #user-defined name of the cluster; string
-  name: ENTERCLUSTERNAME
+  name: vks-cluster-a
   #kubernetes namespace for the cluster; string
-  namespace: ENTERNAMESPACE
+  namespace: vks-cluster-a
   annotations:
     run.tanzu.vmware.com/resolve-os-image: os-name=ubuntu, os-version=24.04
 #define the desired state of cluster
