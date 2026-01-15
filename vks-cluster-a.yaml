@@ -58,6 +58,19 @@ spec:
             overrides:
               - name: vmClass
                 value: best-effort-small
+            # 1. Correct Variable Name is 'volumes'
+              - name: volumes
+                value:
+                  - name: containerd
+                    # 2. Capacity must be a string, not a map
+                    capacity: "50Gi"
+                    mountPath: /var/lib/containerd
+                    storageClass: "home-mgmt-cl01-optimal-datastore-default-policy-raid5"
+                  - name: kubelet
+                    capacity: "50Gi"
+                    mountPath: /var/lib/kubelet
+                    storageClass: "home-mgmt-cl01-optimal-datastore-default-policy-raid5"
+
     #customize the cluster
     variables:
       #virtual machine class type and size for cluster nodes
