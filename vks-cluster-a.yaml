@@ -29,7 +29,7 @@ spec:
     #name of the ClusterClass object to derive the topology
     class: builtin-generic-v3.5.0
     #kubernetes version of the cluster; format is TKR NAME
-    version: v1.34.1+vmware.1
+    version: v1.35.0---vmware.2-vkr.4
     #describe the cluster control plane
     controlPlane:
       metadata:
