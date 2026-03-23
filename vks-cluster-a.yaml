@@ -49,7 +49,7 @@ spec:
           #user-defined name of the node pool; string
           name: np1
           #number of worker nodes in this pool; integer 0 or more
-          replicas: 1
+          replicas: 2
           metadata:
             annotations:
       #Resolve the ubuntu and version of ubuntu to avoid multiple image errors
